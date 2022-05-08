@@ -1,4 +1,4 @@
-import { Hero } from "../sections";
+import { Hero,MainSection } from "../sections";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -6,6 +6,10 @@ const heroProps = {
   description: "Start the process here",
   ctaText: "Start",
 };
+const mainSectionProps ={
+  text : 'Managed agency selection',
+  subtext :'Strengthen your onboarding process'
+}
 
 export default function Home() {
   return (
@@ -20,7 +24,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+ <MainSection text={mainSectionProps.text} subtext={mainSectionProps.subtext}/>
       </div>
     </>
   );

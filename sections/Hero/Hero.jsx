@@ -23,6 +23,7 @@ export const Hero = ({ image, title, description, ctaText, ...props }) => {
       <StyledImageContainer>
         <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
       </StyledImageContainer>
+  
     </StyledContainer>
   );
 };
